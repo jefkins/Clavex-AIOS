@@ -74,7 +74,9 @@ the layer boundaries, request-to-output flow and extension rules.
    provider lock-in
 5. **Secrets in `.env` only** — enforced by contract and `.gitignore`
 6. **Two governance planes** (`13-governance-planes/`): classify and redact
-   before a model is called, and deny by default before an agent acts. Run
+   before a model is called, and deny by default before an agent acts. Start
+   with [GUARDRAILS.md](13-governance-planes/GUARDRAILS.md), which explains
+   gates and signed approvals from scratch, then run
    `python 13-governance-planes/demo.py` to watch an approved message get
    refused after one word of it changed
 

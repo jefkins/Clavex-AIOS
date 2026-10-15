@@ -25,6 +25,14 @@ User / API / n8n / external applications
   Governed output and an execution record
 ```
 
+## New to this idea?
+
+Read **[GUARDRAILS.md](GUARDRAILS.md)** first. It explains the whole concept
+from scratch with no security background assumed: why a written rule is not a
+boundary, what a gate actually checks, why signing beats a confirmation click,
+and a worked example of letting an agent publish code to GitHub without ever
+handing it a GitHub token.
+
 ## Run it
 
 No dependencies. Five scenarios, about forty seconds.
@@ -105,6 +113,8 @@ surface. What is here is the shape of the idea and a working reference you can
 read in one sitting.
 
 ## Where to start reading
+
+Concepts first in [GUARDRAILS.md](GUARDRAILS.md), then the code:
 
 | File | What it answers |
 |---|---|
