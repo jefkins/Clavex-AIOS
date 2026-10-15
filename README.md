@@ -56,6 +56,7 @@ cp .env.example .env          # add your API keys
 | `10-templates/` | Reusable starting points |
 | `11-archive/` | Retired content — nothing is deleted, it is archived |
 | `12-memory/` | Persistent memory: strategy, decisions, lessons and ideas |
+| `13-governance-planes/` | Privacy and Control planes: what a model may see, what an agent may do. Runnable, with tests |
 
 Numbering is deliberate: it fixes the order in listings and gives every
 concern one clear home. Read [the architecture guide](docs/ARCHITECTURE.md) for
@@ -72,6 +73,10 @@ the layer boundaries, request-to-output flow and extension rules.
 4. **Skills as plain markdown** — processes any AI can follow, with no
    provider lock-in
 5. **Secrets in `.env` only** — enforced by contract and `.gitignore`
+6. **Two governance planes** (`13-governance-planes/`): classify and redact
+   before a model is called, and deny by default before an agent acts. Run
+   `python 13-governance-planes/demo.py` to watch an approved message get
+   refused after one word of it changed
 
 ## Author
 
